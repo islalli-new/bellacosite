@@ -39,7 +39,7 @@
         <meta property="og:site_name" content="<?php echo $app_name; ?>">
         <meta property="og:title" content="<?php $title_pag; ?>">
         <meta property="og:description" content="<?php $desc_pag; ?>">
-        <meta property="og:image" content="<?php echo $base_url; ?>img/share-image.jpg">
+        <meta property="og:image" content="<?php echo $base_url; ?>/skin/img/icons/share-image.jpg">
         <meta property="og:image:type" content="image/png">
         <meta property="og:image:width" content="1200"> 
         <meta property="og:image:height" content="1008"> 
