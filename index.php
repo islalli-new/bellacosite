@@ -27,9 +27,9 @@
         <meta name="apple-mobile-web-app-title" content="<?php echo $app_name; ?>">
         
         <!-- Icones -->
-        <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $base_url; ?>/skin/img/icons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $base_url; ?>/skin/img/icons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $base_url; ?>/skin/img/icons/favicon-16x16.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $base_url; ?>skin/img/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $base_url; ?>skin/img/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $base_url; ?>skin/img/icons/favicon-16x16.png">
         <link rel="manifest" href="<?php echo $base_url; ?>site.webmanifest">
         <link rel="mask-icon" href="<?php echo $base_url; ?>safari-pinned-tab.svg" color="<?php echo $color_base; ?>">
 
@@ -39,7 +39,7 @@
         <meta property="og:site_name" content="<?php echo $app_name; ?>">
         <meta property="og:title" content="<?php $title_pag; ?>">
         <meta property="og:description" content="<?php $desc_pag; ?>">
-        <meta property="og:image" content="<?php echo $base_url; ?>/skin/img/icons/share-image.jpg">
+        <meta property="og:image" content="<?php echo $base_url; ?>skin/img/icons/share-image.jpg">
         <meta property="og:image:type" content="image/png">
         <meta property="og:image:width" content="1200"> 
         <meta property="og:image:height" content="1008"> 
