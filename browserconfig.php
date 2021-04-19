@@ -1,6 +1,6 @@
 <?php
 
-	require_once("app.php");
+	require_once("./app/app.php");
 
 	header("Content-type: text/xml; charset: UTF-8");
 	

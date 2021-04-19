@@ -14,7 +14,7 @@
 	RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
 	RewriteRule ^browserconfig.xml?$ browserconfig.php [NC,L]
-	RewriteRule ^manifest.json?$ manifest.php [NC,L]
+	RewriteRule ^site.webmanifest?$ manifest.php [NC,L]
 
 	RewriteRule ^login/?$ index.php?r=login [NC,L]
 
