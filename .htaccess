@@ -16,7 +16,7 @@
 	RewriteRule ^browserconfig.xml?$ browserconfig.php [NC,L]
 	RewriteRule ^site.webmanifest?$ manifest.php [NC,L]
 
-	RewriteRule ^login/?$ index.php?r=login [NC,L]
+	RewriteRule ^home/?$ index.php?r=home [NC,L]
 
 	RewriteRule ^/?$ index.php [NC,L]
 
