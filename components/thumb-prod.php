@@ -3,8 +3,8 @@
 // Dados do thumb produtos
 
 	$TituloProduto = 'Vergalhão CA50 Soldável - 16mm (5/8") asd asd asd asd asd as';
-	$ImgProduto = $base_url.'uploads/'.'prod1.jpg';
-	// $ImgProduto = 'https://acosul.com.br/modules/themeconfigurator/img/1158447b82f060783996f6edf0887f428f9b390f_ferro-e-aco-f.jpg';
+	// $ImgProduto = $base_url.'uploads/'.'prod1.jpg';
+	$ImgProduto = 'https://acosul.com.br/modules/themeconfigurator/img/1158447b82f060783996f6edf0887f428f9b390f_ferro-e-aco-f.jpg';
 	$PrecoProduto = '150,00';
 
 ?>
@@ -22,7 +22,7 @@
 			</div>
 			<div class="thumb-prod-card-body">
 				<p class="thumb-prod-card-body-cat text-muted"><small>Categoria</small></p>
-				<h3 class="thumb-prod-card-body-title lh-100"><?php echo $TituloProduto; ?></h3>
+				<h3 class="thumb-prod-card-body-title text-dark lh-100"><?php echo $TituloProduto; ?></h3>
 			</div>
 			<div class="thumb-prod-card-footer">
 				<p class="thumb-prod-card-body-price text-muted"><small>A partir de</small><br><strong class="text-primary">R$ <?php echo $PrecoProduto; ?></strong> <small>/ un</small></p>

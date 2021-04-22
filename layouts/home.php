@@ -23,7 +23,7 @@
 	</div>
 </header>
 <main>
-	<section>
+	<section class="container">
 		<div class="grid-produtos">
 			<?php $i = 1; while ($i <= 10) : ?>
 

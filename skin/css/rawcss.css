@@ -323,9 +323,9 @@ body.menu-open .menu-list {
 }
 
 .grid-produtos {
-	grid-template-columns: repeat(6, 1fr);
+	grid-template-columns: repeat(5, 1fr);
 	grid-gap: 3rem;
-	padding: 3rem;
+	padding: 3rem 0;
 }
 
 .insta-thumbs {
@@ -394,14 +394,5 @@ body.menu-open .menu-list {
 		object-fit: cover;
 	}
 
-
-}
-
-
-@media (min-width: 1920px) {
-
-.grid-produtos {
-	grid-template-columns: repeat(10, 1fr);
-}
 
 }
