@@ -1,0 +1,407 @@
+/*
+
+Template Name: Bell Aço by Mustard.com.br
+Theme URI: http://mustard.com.br
+Author: Israel Lalli e Cristiano Braga em Mustard.com.br
+Author URI:  http://mustard.com.br
+
+-----------------Cores-----------------*/
+
+.btn {
+	border-radius: 10000px;
+}
+
+.bg-primary {
+  background-color: #f58220!important;
+}
+
+.btn-primary {
+  color: #fff!important;
+  background-color: #f58220!important;
+  border-color: #f58220!important;
+}
+
+.btn-primary:hover {
+	box-shadow: 0 0 0 .2rem #f58220;
+}
+
+.btn-outline-primary {
+    color: #f58220!important;
+    border-color: #f58220!important;
+}
+.btn-outline-primary:hover {
+    color: #f58220!important;
+    border-color: #f58220!important;
+    background-color: #f58220!important;
+    color: white!important
+}
+
+a {
+	color: #f58220!important
+}
+
+.text-primary {
+	color: #f58220!important
+}
+
+/*-----------------Estrutura-----------------*/
+
+/*#### >> GLOBALS*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+body {font-family: 'Montserrat', sans-serif;}
+
+
+.lh-100 {
+	line-height: 100%
+}
+
+.bg-aco-branco {
+	background-image: url(../img/bg-sol.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.main-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+body #topocolado {
+	background-color: rgba(255,255,255,.5);
+	box-shadow: 0 1rem 1rem 0 rgba(71,33,0,0);
+	transition: .2s ease all;
+}
+
+body.colado {
+	padding-top: 4rem;
+}
+
+body.colado #topocolado {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(255,255,255,.6);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	box-shadow: 0 .5rem 1rem 0 rgba(71,33,0,.2), inset 0 -1px 0 0 rgba(255,255,255,.8);
+	transition: .2s ease all;
+	z-index: 10
+}
+
+.logotype {
+	padding: 1rem 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.logotype img {
+	transition: .2s ease all;
+	height: 4rem
+}
+
+body.colado .logotype {
+	padding: .5rem 0;
+}
+
+body.colado .logotype img {
+	transition: .2s ease all;
+	height: 3rem;
+}
+
+.menu-list {
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: -100%;
+	width:100vw;
+	height: 100vh;
+	background-image: url(../img/bg-verga-b.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 110% top;
+	transition: .2s cubic-bezier(1.000, 0.005, 0.000, 0.500) all;
+	flex-direction: column;
+	z-index: 150;
+}
+
+.bg-tubos-laranja {
+	background-image: url(../img/bg-verga-b.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 110% top;
+}
+
+.menu-toggler {
+	font-size: 2em;
+}
+
+.menu-backdrop {
+	transition: .2s cubic-bezier(1.000, 0.005, 0.000, 0.500) all;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	background-color: rgba(71,33,0,.6);
+	position: fixed;
+	z-index: 110;
+	top:0;
+	right: -100%;
+	height: 100vh;
+	width: 100vw;
+}
+
+body.menu-open .menu-backdrop {
+	right: 0;
+}
+
+body.menu-open .menu-list {
+	left: 0;
+	transition: .2s cubic-bezier(1.000, 0.005, 0.000, 0.500) all;
+}
+
+.hero-interativo h1 {
+	font-size: 2.5rem;
+	font-weight: bolder
+}
+
+
+
+
+
+.nav-sub-prod ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.hr-bell {
+	transform: translateY(2px);
+}
+
+.hr-bell img {
+	width: 100%;
+	height: 100%;
+	min-height: 3rem;
+	display: block;
+	object-fit: cover;
+}
+
+
+
+
+.grid-produtos {
+	display: grid;
+	position: relative;
+	grid-template-rows: auto;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 2rem;
+	padding: 2rem;
+	perspective: 1000px;
+}
+
+
+.thumb-prod-card {
+	box-shadow: 0 0 0 1px rgba(71,33,0,.1);
+	width: 100%;
+	height: 100%;
+	border-radius: 1rem;
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.thumb-prod-card-cover {
+	position: relative;
+	display: block;
+	border-radius: 1rem;
+}
+
+.thumb-prod-card-header .prop-square {
+	width: 100%;
+}
+
+.thumb-prod-card-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	border-radius: 1rem;
+}
+
+.thumb-prod-card-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.thumb-prod-card-btn {
+	margin-top: -1.25rem;
+	position: relative;
+	padding: 0 1rem;
+	z-index: 2;
+}
+
+
+.thumb-prod-card-body-cat {
+	padding: 0 .5rem;
+	margin-top: 1rem;
+	border-left: .5rem solid #f58220;
+}
+
+.thumb-prod-card-body-title {
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-top: 1rem;
+	padding: 0 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  width: 100%;
+}
+
+.thumb-prod-card-footer {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.thumb-prod-card-body-price {
+	padding: 0 1rem;
+}
+
+
+
+.insta-thumbs {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+	padding: 1rem;
+	border-radius: 1rem;
+}
+
+.insta-thumbs a img {
+	border-radius: 1rem;
+}
+
+
+
+
+
+
+@media (min-width: 992px) {
+
+.menu-list {
+	flex-direction: row;
+	position: relative;
+	top: auto;
+	left: auto;
+	width: auto;
+	height: auto;
+	flex-direction: row;
+	background: none;
+}
+.menu-list li {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+.hero-interativo h1 {
+	font-size: 4rem;
+}
+
+.grid-produtos {
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 3rem;
+	padding: 3rem;
+}
+
+.insta-thumbs {
+	width: 80%;
+}
+
+	.thumb-prod-card {
+		color: white;
+		font-family: sans-serif;
+		font-weight: bolder;
+		text-transform: uppercase;
+		box-shadow: 0 .1rem .2rem 0 rgba(71,33,0,.5), 0 0 0 1px rgba(71,33,0,.1);
+	  transform-style: preserve-3d;
+	  transform-origin: top center;
+	  transition: .5s all ease;
+	  position: relative;
+	  z-index: 1;
+	}
+	.thumb-prod-card:hover {
+		box-shadow: 0 2rem 1rem -.75rem rgba(71,33,0,.2), 0 0 0 1px rgba(71,33,0,.1);
+		transform: rotateX(5deg) translate3d(0,-.5rem,.5rem);
+	  transition: .2s all ease;
+	  z-index: 2
+	}
+	.thumb-prod-card-reflexo {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+		background-color: rgba(255,255,255,0);
+	  transition: .5s all ease;
+	  z-index: 10;
+	  box-shadow: inset 0 -.1rem .05rem 0 rgba(71,33,0,.3);
+	  border-radius: 1rem;
+	}
+	.thumb-prod-card:hover .thumb-prod-card-reflexo {
+		background-color: rgba(255,255,255,.1);
+	  transition: .2s all ease;
+	  box-shadow: inset 0 -.2rem 0 0 rgba(71,33,0,.2);
+	}
+	.thumb-prod-card-reflexo:after {
+		content: "";
+		height: 10%;
+		width: 200%;
+		background-color: rgba(255,255,255,.3);
+		position: absolute;
+		top: -10%;
+		left: -50%;
+		transform: rotate(5deg);
+		filter: blur(.2rem);
+	  transition: .5s all ease;
+	}
+	.thumb-prod-card:hover .thumb-prod-card-reflexo:after {
+		top: 20%;
+		height: 40%;
+	  transition: .2s all ease;
+	}
+	.thumb-prod-card .img-bloco {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+
+
+}
+
+
+@media (min-width: 1920px) {
+
+.grid-produtos {
+	grid-template-columns: repeat(10, 1fr);
+}
+
+}
