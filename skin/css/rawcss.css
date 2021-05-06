@@ -7,6 +7,10 @@ Author URI:  http://mustard.com.br
 
 -----------------Cores-----------------*/
 
+body {
+	color: black
+}
+
 .btn {
 	border-radius: 10000px;
 }
@@ -56,10 +60,10 @@ body {font-family: 'Montserrat', sans-serif;}
 }
 
 .bg-aco-branco {
-	background-image: url(../img/bg-sol.jpg);
+	background-image: url(../img/bg-sol-2.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: top center;
+	background-position: bottom center;
 }
 
 .main-nav {
@@ -133,7 +137,7 @@ body.colado .logotype img {
 	background-image: url(../img/bg-verga-b.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: 110% top;
+	background-position: center top;
 }
 
 .menu-toggler {
@@ -199,8 +203,8 @@ body.menu-open .menu-list {
 	position: relative;
 	grid-template-rows: auto;
 	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 2rem;
-	padding: 2rem;
+	grid-gap: 1rem;
+	padding: 0 1rem;
 	perspective: 1000px;
 }
 
@@ -251,15 +255,25 @@ body.menu-open .menu-list {
 
 
 .thumb-prod-card-body-cat {
-	padding: 0 .5rem;
-	margin-top: 1rem;
-	border-left: .5rem solid #f58220;
+	padding: 0 .25rem;
+	margin: .5rem 0!important;
+	border-left: .5rem solid rgba(71,33,0,.1);
+	font-size: .75rem;
+}
+
+.thumb-prod-card-body-cat:before {
+	content: "";
+	width: 2rem;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+
 }
 
 .thumb-prod-card-body-title {
-	font-size: 1.2rem;
+	font-size: 1rem;
 	font-weight: bold;
-	margin-top: 1rem;
 	padding: 0 1rem;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -295,8 +309,9 @@ body.menu-open .menu-list {
 }
 
 
-
-
+.rounded-lg {
+	border-radius: 1rem;
+}
 
 
 @media (min-width: 992px) {
@@ -337,17 +352,17 @@ body.menu-open .menu-list {
 		font-family: sans-serif;
 		font-weight: bolder;
 		text-transform: uppercase;
-		box-shadow: 0 0 .3rem 0 rgba(71,33,0,.2), 0 0 0 1px rgba(71,33,0,.1);
+		box-shadow: 0 0 .3rem 0 rgba(71,33,0,.1), 0 0 0 1px rgba(71,33,0,.05);
 	  transform-style: preserve-3d;
 	  transform-origin: top center;
-	  transition: .5s all ease;
+	  transition: .8s all ease;
 	  position: relative;
 	  z-index: 1;
 	}
 	.thumb-prod-card:hover {
 		box-shadow: 0 2rem 1rem -.75rem rgba(71,33,0,.2), 0 0 0 1px rgba(71,33,0,.1);
 		transform: rotateX(1deg) translate3d(0,-.5rem,.5rem);
-	  transition: .2s all ease;
+	  transition: .1s all ease;
 	  z-index: 2
 	}
 	.thumb-prod-card-reflexo {
@@ -358,19 +373,19 @@ body.menu-open .menu-list {
 		left: 0;
 		overflow: hidden;
 		background-color: rgba(255,255,255,0);
-	  transition: .5s all ease;
+	  transition: .8s all ease;
 	  z-index: 10;
-	  box-shadow: inset 0 -.1rem .05rem 0 rgba(71,33,0,.3);
+	  box-shadow: inset 0 -.1rem .05rem 0 rgba(71,33,0,.2);
 	  border-radius: 1rem;
 	}
 	.thumb-prod-card:hover .thumb-prod-card-reflexo {
 		background-color: rgba(255,255,255,.1);
-	  transition: .2s all ease;
+	  transition: .1s all ease;
 	  box-shadow: inset 0 -.2rem 0 0 rgba(71,33,0,.2);
 	}
 	.thumb-prod-card-reflexo:after {
 		content: "";
-		height: 10%;
+		height: 5%;
 		width: 200%;
 		background-color: rgba(255,255,255,.3);
 		position: absolute;

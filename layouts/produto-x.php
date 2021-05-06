@@ -1,3 +1,15 @@
+<?php
+
+// Dados do thumb produtos
+
+	$TituloProduto = 'Vergalhão CA50 Soldável - 16mm (5/8") asd asd asd asd asd as';
+	// $ImgProduto = $base_url.'uploads/'.'prod1.jpg';
+	$ImgProduto = 'https://acosul.com.br/modules/themeconfigurator/img/1158447b82f060783996f6edf0887f428f9b390f_ferro-e-aco-f.jpg';
+	$PrecoProduto = '150,00';
+
+?>
+
+
 <header class="hero-header bg-aco-branco">
 	<div class="bg-dark">
 		<div class="container">
@@ -9,40 +21,54 @@
 		<?php	include("./components/main-menu.php"); ?>
 		</div>
 	</div>
-	<div class="hero-interativo">
-		<div class="d-flex flex-column justify-content-center align-items-center p-lg-5 px-3 py-5">
-			<h1 class="text-center lh-100"><small>Distribuidora de</small> <br class="d-lg-inline-block d-none"> Aço e Metal</h1>
-			<p class="text-center lh-100 h4">Mais de XXX produtos pro seu projeto não parar!</p>
-		</div>
-		<div class="container pb-3 pb-lg-5">
-			<?php	include("./components/nav-sub-prod.php"); ?>
-		</div>
-	</div>
-	<div class="hr-bell">
-		<img src="<?php echo $base_url; ?>skin/img/corte-branco.png">
-	</div>
 </header>
 <main>
 	<section class="container">
-		<div class="grid-produtos">
-			<?php $i = 1; while ($i <= 10) : ?>
+		<div class="row">
+			<div class="col-12">
+				<?php	include("./components/breadcrumb.php"); ?>
+			</div>
+			<div class="col-12">
+				<h1><?php echo $TituloProduto; ?></h1>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div class="mb-3 mb-lg-0">
+					<img class="rounded-lg" width="100%" src="<?php echo $ImgProduto; ?>" alt="<?php echo $TituloProduto; ?>">
+				</div>
+			</div>
+			<div class="col-12 col-lg-6">
+				<div class="bg-secondary rounded-lg">
+					<p class="m-0 p-4 p-lg-5 text-white">Towards fluidity concrete pen marketing saturation point hotdog order-flow neon weathered render-farm neural stimulate nano-boat. Apophenia fetishism hotdog warehouse refrigerator j-pop futurity San Francisco jeans. Chiba-space voodoo god bridge kanji claymore mine film free-market corrupted 8-bit uplink youtube wristwatch refrigerator.</p>
+					<hr class="m-0">
+					<p class="m-0 pt-4 pt-lg-5 px-4 px-lg-5 text-white"><small>Este produto pode variar a disponibilidade</small></p>
 
-					<?php	include("./components/thumb-prod.php"); ?>
-				
-			<?php endwhile; ?>
+				<p class="m-0 px-4 px-lg-5 h4 py-3 py-lg-4"><small>A partir de</small><br><strong class="text-primary">R$ <?php echo $PrecoProduto; ?></strong> <small>/ un</small></p>
+
+					<div class="px-4 px-lg-5 mt-3">
+						<?php	include("./components/form-orcamento.php"); ?>
+					</div>
+
+				</div>
+			</div>
 		</div>
+
+
 	</section>
+
+
 	<section class="bg-tubos-laranja">
 		<div class="hr-bell" style="transform: rotate(180deg) translateY(2px);">
 			<img src="<?php echo $base_url; ?>skin/img/corte-branco.png">
 		</div>
 
-		<?php	include("./components/cta-projeto.php"); ?>
+			<?php	include("./components/cta-projeto.php"); ?>
 
 		<div class="hr-bell" >
 			<img src="<?php echo $base_url; ?>skin/img/corte-branco.png">
 		</div>
 	</section>
+
+
 </main>
 <footer>
 	<div class="container">

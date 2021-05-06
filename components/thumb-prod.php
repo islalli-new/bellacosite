@@ -9,7 +9,7 @@
 
 ?>
 
-		<a href="#" class="thumb-prod-card">
+		<a href="<?php echo $base_url; ?>produto-x" class="thumb-prod-card">
 			<div class="thumb-prod-card-reflexo"></div>
 			<div class="thumb-prod-card-header">
 				<div class="thumb-prod-card-cover">

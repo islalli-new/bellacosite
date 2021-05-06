@@ -10,6 +10,12 @@ switch ($r) {
     $layout = "./layouts/home.php";
 	break;
 
+	case 'produto-x':
+    $title_pag = "Produto X - Bell Aço";
+    $desc_pag = "Descrição do produto";
+    $layout = "./layouts/produto-x.php";
+	break;
+
 	default:
 	  $title_pag  = "Bem vindo à Bell Aço";
     $desc_pag = "Comércio de ferro e aço em Uberlândia - MG";
