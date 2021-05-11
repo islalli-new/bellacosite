@@ -4,6 +4,7 @@ Template Name: Bell Aço by Mustard.com.br
 Theme URI: http://mustard.com.br
 Author: Israel Lalli e Cristiano Braga em Mustard.com.br
 Author URI:  http://mustard.com.br
+Photo by <a href="https://unsplash.com/@enginakyurt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">engin akyurt</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 -----------------Cores-----------------*/
 
@@ -124,7 +125,7 @@ body.colado .logotype img {
 	left: -100%;
 	width:100vw;
 	height: 100vh;
-	background-image: url(../img/bg-verga-b.jpg);
+	background-image: url(../img/bg-grade-b.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 110% top;
@@ -133,11 +134,11 @@ body.colado .logotype img {
 	z-index: 150;
 }
 
-.bg-tubos-laranja {
-	background-image: url(../img/bg-verga-b.jpg);
+.bg-tubos {
+	background-image: url(../img/bg-grade-b.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center top;
+	background-position: center center;
 }
 
 .menu-toggler {
@@ -155,6 +156,10 @@ body.colado .logotype img {
 	right: -100%;
 	height: 100vh;
 	width: 100vw;
+}
+
+body.menu-open {
+	overflow: hidden;
 }
 
 body.menu-open .menu-backdrop {
@@ -207,7 +212,6 @@ body.menu-open .menu-list {
 	padding: 0 1rem;
 	perspective: 1000px;
 }
-
 
 .thumb-prod-card {
 	box-shadow: 0 0 0 1px rgba(71,33,0,.1);
@@ -313,8 +317,45 @@ body.menu-open .menu-list {
 	border-radius: 1rem;
 }
 
+.grid-bell {
+	display: grid;
+	grid-gap: 1rem;
+}
+
+.card-orcamento {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	z-index: 5;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.clip-bell {
+  clip-path: polygon(50% 10%, 60% 0%, 100% 0, 100% 90%, 80% 90%, 70% 100%, 0 100%, 0 10%);
+  transform: translateY(-10%);
+}
 
 @media (min-width: 992px) {
+
+.card-orcamento {
+	position: sticky;
+	top: 7rem;
+	bottom: auto;
+	z-index: 1;
+	border-radius: 1rem!important
+}
+
+.clip-bell {
+  clip-path: polygon(25% 10%, 27% 1%, 100% 0, 100% 90%, 73% 90%, 70% 100%, 0 100%, 0 10%);
+}
+
+.grid-bell-lg-5 {
+	z-index: 150;
+	grid-gap: 2rem;
+}
 
 .menu-list {
 	flex-direction: row;
@@ -341,6 +382,14 @@ body.menu-open .menu-list {
 	grid-template-columns: repeat(5, 1fr);
 	grid-gap: 3rem;
 	padding: 3rem 0;
+}
+
+.grid-produtos.paraorcamento {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.col-lg-9 #navbarTogglerprodbar .btn-outline-primary span {
+	display: none;
 }
 
 .insta-thumbs {

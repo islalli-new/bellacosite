@@ -4,11 +4,11 @@
 	</a>
 	<button class="btn text-black p-3 menu-toggler d-block d-lg-none" onclick="togglemenu()"><i class="fas fa-bars"></i></button>
 	<ul class="menu-list list-unstyled mb-0 p-5 p-lg-0" onclick="togglemenu()">
-		<li class="nav-item active"><a class="btn mb-3 mb-lg-0 me-0 me-lg-3 text-dark" href="#">Home</a></li>
-		<li><a class="btn mb-3 mb-lg-0 me-0 me-lg-3 text-dark" href="#">A Empresa</a></li>
-		<li><a class="btn mb-3 mb-lg-0 me-0 me-lg-3 text-dark" href="#">Produtos</a></li>
+		<li class="nav-item active"><a class="btn mb-3 mb-lg-0 me-0 me-lg-3" href="#">Home</a></li>
+		<li><a class="btn mb-3 mb-lg-0 me-0 me-lg-3" href="#">A Empresa</a></li>
+		<li><a class="btn mb-3 mb-lg-0 me-0 me-lg-3" href="#">Produtos</a></li>
 		<li><a class="btn mb-3 mb-lg-0 me-0 me-lg-1 btn-outline-primary font-weight-bold" href="#">Orçamento</a></li>
-		<li><a class="btn mb-3 mb-lg-0 me-0 text-dark" href="#"><i class="fab fa-whatsapp"></i></a></li>
+		<li><a class="btn mb-3 mb-lg-0 me-0" href="#"><i class="fab fa-whatsapp"></i></a></li>
 	</ul>
 </nav>
 

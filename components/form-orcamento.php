@@ -1,4 +1,4 @@
-<form class="row needs-validation">
+<form class="row needs-validation" action="orcamento">
   <div class="col-3">
     <label for="validationCustom01" class="form-label text-white">Qtd.</label>
     <input type="number" class="form-control" id="validationCustom01" required>
@@ -26,5 +26,4 @@
       <button type="submit" class="btn btn-primary py-3 w-100">Orçar</button>
     </div>
   </div>
-</div>
 </form>

@@ -18,6 +18,8 @@
 
 	RewriteRule ^home/?$ index.php?r=home [NC,L]
 
+	RewriteRule ^orcamento/?$ index.php?r=orcamento [NC,L]
+
 	RewriteRule ^produto-x/?$ index.php?r=produto-x [NC,L]
 
 	RewriteRule ^/?$ index.php [NC,L]
