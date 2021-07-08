@@ -14,6 +14,7 @@
   <div class="col-7 col-lg-8">
     <label for="validationCustom04" class="form-label text-white">Opção</label>
     <select class="form-select" id="validationCustom04" required>
+      <option selected value="">Selecione o tamanho"</option>
       <option selected disabled value="">Tamanho 10"</option>
       <option>...</option>
     </select>

@@ -46,9 +46,12 @@
 			</div>
 			<div class="col-12 col-lg-6">
 				<div class="bg-secondary rounded-lg m-lg-3 card-orcamento">
+					<div class="d-flex">
+						<button id="orcar-toggler" onclick="slideorca()" class="btn btn-primary d-flex flex-row justify-content-center align-items-center"><i class="fas fa-chevron-circle-up"></i><span>Orçar</span></button>
+					</div>
 					<p class="m-0 pt-4 pt-lg-5 px-4 px-lg-5 text-white"><small>Este produto pode variar a disponibilidade</small></p>
 
-				<p class="m-0 px-4 px-lg-5 h4 py-3 py-lg-4"><small>A partir de</small><br><strong class="text-primary">R$ <?php echo $PrecoProduto; ?></strong> <small>/ un</small></p>
+					<p class="m-0 px-4 px-lg-5 h4 py-3 py-lg-4"><small>A partir de</small><br><strong class="text-primary">R$ <?php echo $PrecoProduto; ?></strong> <small>/ un</small></p>
 
 					<div class="px-4 px-lg-5 mt-3">
 						<?php	include("./components/form-orcamento.php"); ?>

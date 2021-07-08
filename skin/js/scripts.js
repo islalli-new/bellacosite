@@ -20,3 +20,9 @@ function togglemenu() {
    var classbody = document.querySelector("body")
    classbody.classList.toggle("menu-open")
 }
+
+//Abre menu orcamento
+function slideorca() {
+   var classbody = document.querySelector("body")
+   classbody.classList.toggle("orca-open")
+}
